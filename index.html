@@ -4,19 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="City of Berlin in Germany" />
+    <meta name="keywords" content="Berlin, Germany, Berlin Wall" />
+    <meta name="author" content="Hooman Shahidi" />
+    <link rel="icon" href="icon.png" type="image/x-icon" />
+    <title>Wikipedia</title>
   </head>
   <body>
-    <img src="wikipedia-logo.jpg" alt="wikipedia-logo" />
-    <input type="text" placeholder="Search Wikipedia" name="search" />
-    <button type="submit">Search</button>
-    <ul>
-      <li>Main page</li>
-      <li>Contents</li>
-      <li>Current events</li>
-      <li>Random article</li>
-    </ul>
-    <h1>Berlin</h1>
+    <img
+      src="wikipedia-logo.svg"
+      alt="wikipedia-logo"
+      style="width: 50px; height: 50px"
+    />
+    <p style="font-size: 35px; display: inline; margin-left: 30px">Wikipedia</p>
+    <div style="float: right">
+      <input type="search" placeholder="Search Wikipedia" name="search" />
+      <button type="submit">Search</button>
+    </div>
+
+    <div style="margin-left: 1px">
+      <ul style="list-style: none">
+        <li
+          style="
+            display: inline-block;
+            padding-right: 5px;
+            border-right: 1px solid black;
+          "
+        >
+          <a href="#section-berlin">Berlin</a>
+        </li>
+        <li
+          style="
+            display: inline-block;
+            padding-right: 5px;
+            border-right: 1px solid black;
+          "
+        >
+          <a href="#section-viewOfBerlin">View of Berlin</a>
+        </li>
+        <li
+          style="
+            display: inline-block;
+            padding-right: 5px;
+            border-right: 1px solid black;
+          "
+        >
+          <a href="#section-berlinRatings">Berlin ratings</a>
+        </li>
+        <li style="display: inline-block">
+          <a href="#section-berlinWall">Berlin wall</a>
+        </li>
+      </ul>
+    </div>
+    <h1 id="section-berlin">Berlin</h1>
     <p>
       &emsp; Berlin is the capital and largest city of Germany by both area and
       population. Its 3.8 million inhabitants make it the European Union's most
@@ -41,7 +81,7 @@
       dialect being a variant of the Lusatian-New Marchian dialects.
     </p>
     <img src="berlin.jpg" alt="berlin-city" />
-    <h2>View of Berlin</h2>
+    <h2 id="section-viewOfBerlin">View of Berlin</h2>
     <p>
       &emsp; October 1990, the two parts of Germany were reunified as the
       Federal Republic of Germany, and Berlin again became a reunified city.
@@ -52,7 +92,7 @@
       expiring by that time, and Eberhard Diepgen (a former mayor of West
       Berlin) became the first elected mayor of a reunited Berlin.
     </p>
-    <h1>Berlin ratings</h1>
+    <h1 id="section-berlinRatings">Berlin ratings</h1>
     <table>
       <tr>
         <th></th>
@@ -62,16 +102,60 @@
       </tr>
       <tr>
         <th>local people opinion</th>
-        <th>9/10</th>
-        <th>7.5/10</th>
-        <th>8</th>
+        <td>9/10</td>
+        <td>7.5/10</td>
+        <td>8</td>
       </tr>
       <tr>
         <th>travellers opinion</th>
-        <th>8/10</th>
-        <th>8.5/10</th>
-        <th>7.5/10</th>
+        <td>8/10</td>
+        <td>8.5/10</td>
+        <td>7.5/10</td>
       </tr>
     </table>
+    <h1 id="section-berlinWall">Berlin Wall</h1>
+    <p>
+      &emsp; The Berlin Wall was a guarded concrete barrier that physically and
+      ideologically divided Berlin from 1961 to 1989. Construction of the wall
+      was commenced by the German Democratic Republic (GDR, East Germany) on 13
+      August 1961. The Wall cut off West Berlin from surrounding East Germany,
+      including East Berlin. The barrier included guard towers placed along
+      large concrete walls, accompanied by a wide area (later known as the
+      "death strip") that contained anti-vehicle trenches, beds of nails and
+      other defenses. The Eastern Bloc portrayed the Wall as protecting its
+      population from fascist elements conspiring to prevent the "will of the
+      people" from building a socialist state in East Germany. GDR authorities
+      officially referred to the Berlin Wall as the Anti-Fascist Protection
+      Rampart (German: Antifaschistischer Schutzwall). The West Berlin city
+      government sometimes referred to it as the "Wall of Shame", a term coined
+      by mayor Willy Brandt in reference to the Wall's restriction on freedom of
+      movement. Along with the separate and much longer Inner German border
+      (IGB), which demarcated the border between East and West Germany, it came
+      to symbolize physically the "Iron Curtain" that separated Western Europe
+      and the Eastern Bloc during the Cold War.
+    </p>
+    <img src="berlin-wall.jpg" alt="berlin-city" />
+    <h1>Sample video</h1>
+    <video src="COM4134-F21- File.mp4" height="150" controls></video>
+    <footer>
+      <p>This page was last edited on 24 October 2021, at 13:39.</p>
+      <p>All rights reserved ©</p>
+      <div style="margin-left: 1px">
+        <ul style="list-style: none">
+          <li style="display: inline-block; padding-right: 5px">
+            <a href="#">Privacy policy</a>
+          </li>
+          <li style="display: inline-block; padding-right: 5px">
+            <a href="#">About Wikipedia</a>
+          </li>
+          <li style="display: inline-block; padding-right: 5px">
+            <a href="#">Developers</a>
+          </li>
+          <li style="display: inline-block">
+            <a href="#">Cookie statement</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
