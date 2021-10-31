@@ -9,17 +9,23 @@
     <meta name="author" content="Hooman Shahidi" />
     <link rel="icon" href="icon.png" type="image/x-icon" />
     <title>Wikipedia</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img
-      src="wikipedia-logo.svg"
-      alt="wikipedia-logo"
-      style="width: 50px; height: 50px"
-    />
-    <p style="font-size: 35px; display: inline; margin-left: 30px">Wikipedia</p>
-    <div style="float: right">
-      <input type="search" placeholder="Search Wikipedia" name="search" />
-      <button type="submit">Search</button>
+    <div class="header-bar">
+      <div id="header-logo">
+        <img
+          src="wikipedia-logo.svg"
+          alt="wikipedia-logo"
+          style="width: 50px; height: 50px"
+        />
+        <p>Wikipedia</p>
+      </div>
+
+      <div id="search-box">
+        <input type="search" placeholder="Search Wikipedia" name="search" />
+        <button type="submit">Search</button>
+      </div>
     </div>
 
     <div style="margin-left: 1px">
@@ -80,7 +86,9 @@
       lakes. The city lies in the Central German dialect area, the Berlin
       dialect being a variant of the Lusatian-New Marchian dialects.
     </p>
-    <img src="berlin.jpg" alt="berlin-city" />
+    <div class="center-img">
+      <img src="berlin.jpg" alt="berlin-city" />
+    </div>
     <h2 id="section-viewOfBerlin">View of Berlin</h2>
     <p>
       &emsp; October 1990, the two parts of Germany were reunified as the
@@ -134,9 +142,14 @@
       to symbolize physically the "Iron Curtain" that separated Western Europe
       and the Eastern Bloc during the Cold War.
     </p>
-    <img src="berlin-wall.jpg" alt="berlin-city" />
+    <div class="center-img">
+      <img src="berlin-wall.jpg" alt="berlin-city" />
+    </div>
+
     <h1>Sample video</h1>
-    <video src="COM4134-F21- File.mp4" height="150" controls></video>
+    <div class="vid">
+      <video src="COM4134-F21- File.mp4" height="150" controls></video>
+    </div>
     <footer>
       <p>This page was last edited on 24 October 2021, at 13:39.</p>
       <p>All rights reserved ©</p>
