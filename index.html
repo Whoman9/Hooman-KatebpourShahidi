@@ -15,6 +15,7 @@
     <div class="header-bar">
       <div id="header-logo">
         <img
+          id="logo-img"
           src="wikipedia-logo.svg"
           alt="wikipedia-logo"
           style="width: 50px; height: 50px"
@@ -28,7 +29,7 @@
       </div>
     </div>
 
-    <div style="margin-left: 1px">
+    <div style="margin-left: 1px" class="navigation">
       <ul style="list-style: none">
         <li
           style="
@@ -61,94 +62,106 @@
           <a href="#section-berlinWall">Berlin wall</a>
         </li>
       </ul>
-    </div>
-    <h1 id="section-berlin">Berlin</h1>
-    <p>
-      &emsp; Berlin is the capital and largest city of Germany by both area and
-      population. Its 3.8 million inhabitants make it the European Union's most
-      populous city, according to population within city limits. One of
-      Germany's sixteen constituent states, Berlin is surrounded by the State of
-      Brandenburg and contiguous with Potsdam, Brandenburg's capital. Berlin's
-      urban area, which has a population of around 4.5 million, is the second
-      most populous urban area in Germany after the Ruhr. The Berlin-Brandenburg
-      capital region has over six million inhabitants and is Germany's
-      third-largest metropolitan region after the Rhine-Ruhr and Rhine-Main
-      regions.
-    </p>
-    <p>
-      &emsp; Berlin straddles the banks of the Spree, which flows into the Havel
-      (a tributary of the Elbe) in the western borough of Spandau. Among the
-      city's main topographical features are the many lakes in the western and
-      southeastern boroughs formed by the Spree, Havel and Dahme, the largest of
-      which is Lake Müggelsee. Due to its location in the European Plain, Berlin
-      is influenced by a temperate seasonal climate. About one-third of the
-      city's area is composed of forests, parks, gardens, rivers, canals and
-      lakes. The city lies in the Central German dialect area, the Berlin
-      dialect being a variant of the Lusatian-New Marchian dialects.
-    </p>
-    <div class="center-img">
-      <img src="berlin.jpg" alt="berlin-city" />
-    </div>
-    <h2 id="section-viewOfBerlin">View of Berlin</h2>
-    <p>
-      &emsp; October 1990, the two parts of Germany were reunified as the
-      Federal Republic of Germany, and Berlin again became a reunified city.
-      Walter Momper, the mayor of West Berlin, became the first mayor of the
-      reunified city in the interim. City-wide elections in December 1990
-      resulted in the first "all Berlin" mayor being elected to take office in
-      January 1991, with the separate offices of mayors in East and West Berlin
-      expiring by that time, and Eberhard Diepgen (a former mayor of West
-      Berlin) became the first elected mayor of a reunited Berlin.
-    </p>
-    <h1 id="section-berlinRatings">Berlin ratings</h1>
-    <table>
-      <tr>
-        <th></th>
-        <th>Historical sites</th>
-        <th>Natural sites</th>
-        <th>transportation</th>
-      </tr>
-      <tr>
-        <th>local people opinion</th>
-        <td>9/10</td>
-        <td>7.5/10</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <th>travellers opinion</th>
-        <td>8/10</td>
-        <td>8.5/10</td>
-        <td>7.5/10</td>
-      </tr>
-    </table>
-    <h1 id="section-berlinWall">Berlin Wall</h1>
-    <p>
-      &emsp; The Berlin Wall was a guarded concrete barrier that physically and
-      ideologically divided Berlin from 1961 to 1989. Construction of the wall
-      was commenced by the German Democratic Republic (GDR, East Germany) on 13
-      August 1961. The Wall cut off West Berlin from surrounding East Germany,
-      including East Berlin. The barrier included guard towers placed along
-      large concrete walls, accompanied by a wide area (later known as the
-      "death strip") that contained anti-vehicle trenches, beds of nails and
-      other defenses. The Eastern Bloc portrayed the Wall as protecting its
-      population from fascist elements conspiring to prevent the "will of the
-      people" from building a socialist state in East Germany. GDR authorities
-      officially referred to the Berlin Wall as the Anti-Fascist Protection
-      Rampart (German: Antifaschistischer Schutzwall). The West Berlin city
-      government sometimes referred to it as the "Wall of Shame", a term coined
-      by mayor Willy Brandt in reference to the Wall's restriction on freedom of
-      movement. Along with the separate and much longer Inner German border
-      (IGB), which demarcated the border between East and West Germany, it came
-      to symbolize physically the "Iron Curtain" that separated Western Europe
-      and the Eastern Bloc during the Cold War.
-    </p>
-    <div class="center-img">
-      <img src="berlin-wall.jpg" alt="berlin-city" />
-    </div>
 
-    <h1>Sample video</h1>
-    <div class="vid">
-      <video src="COM4134-F21- File.mp4" height="150" controls></video>
+      <div class="toggle-btn">
+        <button type="submit" onclick="changeTheme()">Change theme</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column col-left">left column</div>
+      <div class="column">
+        <h1 id="section-berlin">Berlin</h1>
+        <p>
+          &emsp; Berlin is the capital and largest city of Germany by both area
+          and population. Its 3.8 million inhabitants make it the European
+          Union's most populous city, according to population within city
+          limits. One of Germany's sixteen constituent states, Berlin is
+          surrounded by the State of Brandenburg and contiguous with Potsdam,
+          Brandenburg's capital. Berlin's urban area, which has a population of
+          around 4.5 million, is the second most populous urban area in Germany
+          after the Ruhr. The Berlin-Brandenburg capital region has over six
+          million inhabitants and is Germany's third-largest metropolitan region
+          after the Rhine-Ruhr and Rhine-Main regions.
+        </p>
+        <p>
+          &emsp; Berlin straddles the banks of the Spree, which flows into the
+          Havel (a tributary of the Elbe) in the western borough of Spandau.
+          Among the city's main topographical features are the many lakes in the
+          western and southeastern boroughs formed by the Spree, Havel and
+          Dahme, the largest of which is Lake Müggelsee. Due to its location in
+          the European Plain, Berlin is influenced by a temperate seasonal
+          climate. About one-third of the city's area is composed of forests,
+          parks, gardens, rivers, canals and lakes. The city lies in the Central
+          German dialect area, the Berlin dialect being a variant of the
+          Lusatian-New Marchian dialects.
+        </p>
+        <div class="center-img">
+          <img src="berlin.jpg" alt="berlin-city" />
+        </div>
+        <h2 id="section-viewOfBerlin">View of Berlin</h2>
+        <p>
+          &emsp; October 1990, the two parts of Germany were reunified as the
+          Federal Republic of Germany, and Berlin again became a reunified city.
+          Walter Momper, the mayor of West Berlin, became the first mayor of the
+          reunified city in the interim. City-wide elections in December 1990
+          resulted in the first "all Berlin" mayor being elected to take office
+          in January 1991, with the separate offices of mayors in East and West
+          Berlin expiring by that time, and Eberhard Diepgen (a former mayor of
+          West Berlin) became the first elected mayor of a reunited Berlin.
+        </p>
+        <h1 id="section-berlinRatings">Berlin ratings</h1>
+        <table>
+          <tr>
+            <th></th>
+            <th>Historical sites</th>
+            <th>Natural sites</th>
+            <th>transportation</th>
+          </tr>
+          <tr>
+            <th>local people opinion</th>
+            <td>9/10</td>
+            <td>7.5/10</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>travellers opinion</th>
+            <td>8/10</td>
+            <td>8.5/10</td>
+            <td>7.5/10</td>
+          </tr>
+        </table>
+        <h1 id="section-berlinWall">Berlin Wall</h1>
+        <p>
+          &emsp; The Berlin Wall was a guarded concrete barrier that physically
+          and ideologically divided Berlin from 1961 to 1989. Construction of
+          the wall was commenced by the German Democratic Republic (GDR, East
+          Germany) on 13 August 1961. The Wall cut off West Berlin from
+          surrounding East Germany, including East Berlin. The barrier included
+          guard towers placed along large concrete walls, accompanied by a wide
+          area (later known as the "death strip") that contained anti-vehicle
+          trenches, beds of nails and other defenses. The Eastern Bloc portrayed
+          the Wall as protecting its population from fascist elements conspiring
+          to prevent the "will of the people" from building a socialist state in
+          East Germany. GDR authorities officially referred to the Berlin Wall
+          as the Anti-Fascist Protection Rampart (German: Antifaschistischer
+          Schutzwall). The West Berlin city government sometimes referred to it
+          as the "Wall of Shame", a term coined by mayor Willy Brandt in
+          reference to the Wall's restriction on freedom of movement. Along with
+          the separate and much longer Inner German border (IGB), which
+          demarcated the border between East and West Germany, it came to
+          symbolize physically the "Iron Curtain" that separated Western Europe
+          and the Eastern Bloc during the Cold War.
+        </p>
+        <div class="center-img">
+          <img src="berlin-wall.jpg" alt="berlin-city" />
+        </div>
+
+        <h1>Sample video</h1>
+        <div class="vid">
+          <video src="COM4134-F21- File.mp4" height="150" controls></video>
+        </div>
+      </div>
+      <div class="column col-right">right column</div>
     </div>
     <footer>
       <p>This page was last edited on 24 October 2021, at 13:39.</p>
@@ -170,5 +183,19 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+      function changeTheme() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        var i = document.getElementById("logo-img");
+        if (element.classList == "dark-mode") {
+          i.src = "wikipedia-logo-black.svg";
+          i.style.backgroundColor = "white";
+        } else {
+          i.src = "wikipedia-logo.svg";
+        }
+      }
+    </script>
   </body>
 </html>
