@@ -10,6 +10,10 @@
     <link rel="icon" href="icon.png" type="image/x-icon" />
     <title>Wikipedia</title>
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jqJavascript.js"></script>
   </head>
   <body>
     <div class="header-bar">
@@ -98,6 +102,12 @@
         <div class="center-img">
           <img src="berlin.jpg" alt="berlin-city" />
         </div>
+        <div>
+          <button class="street-img" onclick="showInfo()">Show info</button>
+          <p class="street-img-info" hidden>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iste?
+          </p>
+        </div>
         <h2 id="section-viewOfBerlin">View of Berlin</h2>
         <p>
           &emsp; October 1990, the two parts of Germany were reunified as the
@@ -155,6 +165,12 @@
         <div class="center-img">
           <img src="berlin-wall.jpg" alt="berlin-city" />
         </div>
+        <div>
+          <button class="street-img" onclick="showInfo()">Show info</button>
+          <p class="street-img-info" hidden>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iste?
+          </p>
+        </div>
 
         <h1>Sample video</h1>
         <div class="vid">
@@ -183,19 +199,5 @@
         </ul>
       </div>
     </footer>
-
-    <script>
-      function changeTheme() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-        var i = document.getElementById("logo-img");
-        if (element.classList == "dark-mode") {
-          i.src = "wikipedia-logo-black.svg";
-          i.style.backgroundColor = "white";
-        } else {
-          i.src = "wikipedia-logo.svg";
-        }
-      }
-    </script>
   </body>
 </html>
