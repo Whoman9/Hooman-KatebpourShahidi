@@ -10,15 +10,14 @@ function changeTheme() {
   }
 }
 
-function showInfo() {
+function showInfo(element) {
 
-    var btn = $('.street-img').html();
-    if (btn == "Show info") {
-      $('.street-img-info').show();
-      $('.street-img').text('Hide info');
-    } else if (btn == "Hide info"){
-      $('.street-img-info').hide();
-      $('.street-img').text('Show info')
+  $('#' + element).toggle("slow", function(){
+    if($('#' + element).is(":visible")) {
+      $('#' + element).siblings('.street-img').text('Hide info');
+    } else {
+      $('#' + element).siblings('.street-img').text('Show info');
     }
 
+  });
 }
